@@ -3,7 +3,7 @@
 	<Profile sr="prof10" ve="2">
 		<cdate>1403100624491</cdate>
 		<clp>true</clp>
-		<edate>1404079919720</edate>
+		<edate>1404462696522</edate>
 		<flags>8</flags>
 		<id>10</id>
 		<mid0>5</mid0>
@@ -16,24 +16,47 @@
 			<Str sr="arg2" ve="3"/>
 		</State>
 	</Profile>
+	<Profile sr="prof101" ve="2">
+		<cdate>1404282473786</cdate>
+		<clp>true</clp>
+		<edate>1404283266942</edate>
+		<id>101</id>
+		<mid0>4</mid0>
+		<nme>Night Mode Off</nme>
+		<State sr="con0" ve="2">
+			<code>165</code>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="2">
+					<lhs>%Nighttime</lhs>
+					<op>0</op>
+					<rhs>off</rhs>
+				</Condition>
+				<Condition sr="c1" ve="2">
+					<lhs>%Nightmode</lhs>
+					<op>0</op>
+					<rhs>on</rhs>
+				</Condition>
+			</ConditionList>
+		</State>
+	</Profile>
 	<Profile sr="prof12" ve="2">
 		<cdate>1403441931550</cdate>
 		<clp>true</clp>
-		<edate>1404076924991</edate>
+		<edate>1404284883500</edate>
 		<flags>8</flags>
 		<id>12</id>
 		<mid0>25</mid0>
 		<nme>Screen On Data On</nme>
 		<State sr="con0" ve="2">
-			<code>100</code>
-			<pin>true</pin>
-		</State>
-		<State sr="con1" ve="2">
 			<cname>Prompt Mobile Data</cname>
 			<code>165</code>
 			<ConditionList sr="if">
 				<bool0>And</bool0>
 				<bool1>And</bool1>
+				<bool2>And</bool2>
+				<bool3>And</bool3>
+				<bool4>And</bool4>
 				<Condition sr="c0" ve="2">
 					<lhs>%Lowpower</lhs>
 					<op>0</op>
@@ -49,36 +72,20 @@
 					<op>0</op>
 					<rhs>off</rhs>
 				</Condition>
-			</ConditionList>
-		</State>
-		<Event sr="con2" ve="2">
-			<code>208</code>
-		</Event>
-	</Profile>
-	<Profile sr="prof14" ve="2">
-		<cdate>1403480387599</cdate>
-		<clp>true</clp>
-		<edate>1403899863115</edate>
-		<id>14</id>
-		<mid0>18</mid0>
-		<nme>Screen On Nightmode Off</nme>
-		<State sr="con0" ve="2">
-			<code>165</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="2">
-					<lhs>%Nightmode</lhs>
+				<Condition sr="c3" ve="2">
+					<lhs>%AIR</lhs>
 					<op>0</op>
-					<rhs>on</rhs>
+					<rhs>off</rhs>
 				</Condition>
-			</ConditionList>
-		</State>
-		<State sr="con1" ve="2">
-			<code>165</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="2">
+				<Condition sr="c4" ve="2">
 					<lhs>%Display</lhs>
 					<op>0</op>
 					<rhs>on</rhs>
+				</Condition>
+				<Condition sr="c5" ve="2">
+					<lhs>%Nightmode</lhs>
+					<op>0</op>
+					<rhs>off</rhs>
 				</Condition>
 			</ConditionList>
 		</State>
@@ -86,16 +93,12 @@
 	<Profile sr="prof15" ve="2">
 		<cdate>1403101499292</cdate>
 		<clp>true</clp>
-		<edate>1403936387842</edate>
+		<edate>1404284972100</edate>
+		<flags>8</flags>
 		<id>15</id>
-		<mid0>33</mid0>
-		<mid1>4</mid1>
+		<mid0>3</mid0>
 		<nme>Night Mode</nme>
 		<State sr="con0" ve="2">
-			<code>123</code>
-			<Int sr="arg0" val="0"/>
-		</State>
-		<State sr="con1" ve="2">
 			<cname>Home At Night</cname>
 			<code>165</code>
 			<ConditionList sr="if">
@@ -116,7 +119,7 @@
 	<Profile sr="prof17" ve="2">
 		<cdate>1403358821147</cdate>
 		<clp>true</clp>
-		<edate>1404060305437</edate>
+		<edate>1404734814159</edate>
 		<flags>8</flags>
 		<id>17</id>
 		<mid0>22</mid0>
@@ -145,25 +148,10 @@
 			</ConditionList>
 		</State>
 	</Profile>
-	<Profile sr="prof2" ve="2">
-		<cdate>1403200193681</cdate>
-		<clp>true</clp>
-		<edate>1403913898533</edate>
-		<flags>8</flags>
-		<id>2</id>
-		<mid0>11</mid0>
-		<mid1>84</mid1>
-		<App sr="con0" ve="2">
-			<cls0>com.google.android.maps.MapsActivity</cls0>
-			<flags>2</flags>
-			<label0>Maps</label0>
-			<pkg0>com.google.android.apps.maps</pkg0>
-		</App>
-	</Profile>
 	<Profile sr="prof30" ve="2">
 		<cdate>1403514136709</cdate>
 		<clp>true</clp>
-		<edate>1404060339368</edate>
+		<edate>1404157981348</edate>
 		<flags>8</flags>
 		<id>30</id>
 		<mid0>26</mid0>
@@ -182,7 +170,7 @@
 	<Profile sr="prof32" ve="2">
 		<cdate>1403516908843</cdate>
 		<clp>true</clp>
-		<edate>1403913415047</edate>
+		<edate>1404280237980</edate>
 		<id>32</id>
 		<mid0>31</mid0>
 		<nme>Night Mode Lock Delay</nme>
@@ -200,11 +188,12 @@
 	<Profile sr="prof34" ve="2">
 		<cdate>1403517188346</cdate>
 		<clp>true</clp>
-		<edate>1403915063759</edate>
+		<edate>1404279626288</edate>
 		<id>34</id>
-		<mid0>20</mid0>
+		<mid0>89</mid0>
 		<nme>Night Mode On Delay</nme>
 		<State sr="con0" ve="2">
+			<cname>Night Mode On</cname>
 			<code>165</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="2">
@@ -218,7 +207,7 @@
 	<Profile sr="prof37" ve="2">
 		<cdate>1403789020093</cdate>
 		<clp>true</clp>
-		<edate>1403949350319</edate>
+		<edate>1404735843219</edate>
 		<id>37</id>
 		<mid0>36</mid0>
 		<nme>Autosync Widget</nme>
@@ -233,29 +222,12 @@
 			<Str sr="arg1" ve="3">Autosync</Str>
 		</Event>
 	</Profile>
-	<Profile sr="prof38" ve="2">
-		<cdate>1403874927628</cdate>
-		<clp>true</clp>
-		<edate>1404048855674</edate>
-		<id>38</id>
-		<mid0>41</mid0>
-		<nme>Home Wifi Detected</nme>
-		<State sr="con0" ve="2">
-			<cname>Home Wifi Detected</cname>
-			<code>170</code>
-			<Str sr="arg0" ve="3">%Homewifi</Str>
-			<Str sr="arg1" ve="3"/>
-			<Str sr="arg2" ve="3"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="0"/>
-		</State>
-	</Profile>
 	<Profile sr="prof40" ve="2">
 		<cdate>1403794594150</cdate>
 		<clp>true</clp>
-		<edate>1404072309417</edate>
+		<edate>1404806335485</edate>
 		<id>40</id>
+		<limit>true</limit>
 		<mid0>27</mid0>
 		<nme>Lock Immediately</nme>
 		<State sr="con0" ve="2">
@@ -345,7 +317,7 @@
 	<Profile sr="prof55" ve="2">
 		<cdate>1403640075313</cdate>
 		<clp>true</clp>
-		<edate>1404081743051</edate>
+		<edate>1404291696640</edate>
 		<id>55</id>
 		<mid0>93</mid0>
 		<nme>Auto Sync Schedule</nme>
@@ -363,6 +335,7 @@
 			<ConditionList sr="if">
 				<bool0>And</bool0>
 				<bool1>And</bool1>
+				<bool2>And</bool2>
 				<Condition sr="c0" ve="2">
 					<lhs>%Lowpower</lhs>
 					<op>0</op>
@@ -375,6 +348,11 @@
 				</Condition>
 				<Condition sr="c2" ve="2">
 					<lhs>%Autosync</lhs>
+					<op>0</op>
+					<rhs>off</rhs>
+				</Condition>
+				<Condition sr="c3" ve="2">
+					<lhs>%Wificonn</lhs>
 					<op>0</op>
 					<rhs>off</rhs>
 				</Condition>
@@ -395,8 +373,7 @@
 	</Profile>
 	<Profile sr="prof60" ve="2">
 		<cdate>1403680173263</cdate>
-		<clp>true</clp>
-		<edate>1404081844464</edate>
+		<edate>1405416036570</edate>
 		<flags>8</flags>
 		<id>60</id>
 		<mid0>59</mid0>
@@ -406,6 +383,7 @@
 			<code>165</code>
 			<ConditionList sr="if">
 				<bool0>And</bool0>
+				<bool1>And</bool1>
 				<Condition sr="c0" ve="2">
 					<lhs>%Autosyncmanual</lhs>
 					<op>0</op>
@@ -415,6 +393,11 @@
 					<lhs>%Autosync</lhs>
 					<op>0</op>
 					<rhs>on</rhs>
+				</Condition>
+				<Condition sr="c2" ve="2">
+					<lhs>%Display</lhs>
+					<op>0</op>
+					<rhs>off</rhs>
 				</Condition>
 			</ConditionList>
 		</State>
@@ -484,8 +467,9 @@
 	<Profile sr="prof65" ve="2">
 		<cdate>1403900987288</cdate>
 		<clp>true</clp>
-		<edate>1404074501741</edate>
+		<edate>1404806373366</edate>
 		<id>65</id>
+		<limit>true</limit>
 		<mid0>48</mid0>
 		<nme>Out And About</nme>
 		<State sr="con0" ve="2">
@@ -531,7 +515,7 @@
 	<Profile sr="prof68" ve="2">
 		<cdate>1403899746036</cdate>
 		<clp>true</clp>
-		<edate>1403899780912</edate>
+		<edate>1404284869954</edate>
 		<id>68</id>
 		<mid0>70</mid0>
 		<State sr="con0" ve="2">
@@ -541,7 +525,8 @@
 	</Profile>
 	<Profile sr="prof69" ve="2">
 		<cdate>1403693365635</cdate>
-		<edate>1404084021494</edate>
+		<clp>true</clp>
+		<edate>1404738843298</edate>
 		<id>69</id>
 		<mid0>23</mid0>
 		<State sr="con0" ve="2">
@@ -551,7 +536,7 @@
 	<Profile sr="prof7" ve="2">
 		<cdate>1403100424859</cdate>
 		<clp>true</clp>
-		<edate>1404056133018</edate>
+		<edate>1404680190146</edate>
 		<flags>8</flags>
 		<id>7</id>
 		<mid0>47</mid0>
@@ -570,7 +555,7 @@
 	<Profile sr="prof71" ve="2">
 		<cdate>1403899792333</cdate>
 		<clp>true</clp>
-		<edate>1404057814192</edate>
+		<edate>1404734645275</edate>
 		<id>71</id>
 		<mid0>73</mid0>
 		<State sr="con0" ve="2">
@@ -581,7 +566,7 @@
 	<Profile sr="prof74" ve="2">
 		<cdate>1403903570149</cdate>
 		<clp>true</clp>
-		<edate>1404048782876</edate>
+		<edate>1404307306679</edate>
 		<id>74</id>
 		<mid0>75</mid0>
 		<nme>Home Wifi Ssid</nme>
@@ -613,7 +598,7 @@
 	<Profile sr="prof79" ve="2">
 		<cdate>1403912168304</cdate>
 		<clp>true</clp>
-		<edate>1403936411541</edate>
+		<edate>1404285079456</edate>
 		<id>79</id>
 		<mid0>80</mid0>
 		<mid1>81</mid1>
@@ -621,31 +606,40 @@
 		<Time sr="con0">
 			<fh>0</fh>
 			<fm>0</fm>
-			<th>8</th>
+			<th>9</th>
 			<tm>0</tm>
 		</Time>
 	</Profile>
 	<Profile sr="prof8" ve="2">
 		<cdate>1403721722096</cdate>
 		<clp>true</clp>
-		<edate>1404074608662</edate>
+		<edate>1404387661373</edate>
 		<id>8</id>
 		<mid0>16</mid0>
 		<mid1>39</mid1>
 		<nme>Home Approach</nme>
 		<Loc sr="con0">
+			<cname>Home Area</cname>
 			<lat>53.591304</lat>
 			<long>10.007547</long>
 			<prv>2</prv>
 			<rad>50.0</rad>
 		</Loc>
+		<State sr="con1" ve="2">
+			<code>170</code>
+			<Str sr="arg0" ve="3">FRITZ!Box WLAN 3270</Str>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="1"/>
+		</State>
 	</Profile>
 	<Profile sr="prof82" ve="2">
 		<cdate>1403912886723</cdate>
 		<clp>true</clp>
-		<edate>1404074406313</edate>
+		<edate>1404386963802</edate>
 		<id>82</id>
-		<limit>true</limit>
 		<mid0>83</mid0>
 		<nme>Wifi At Home</nme>
 		<State sr="con0" ve="2">
@@ -678,10 +672,34 @@
 			<Int sr="arg0" val="0"/>
 		</State>
 	</Profile>
+	<Profile sr="prof90" ve="2">
+		<cdate>1404281731065</cdate>
+		<clp>true</clp>
+		<edate>1404283424436</edate>
+		<id>90</id>
+		<mid0>100</mid0>
+		<nme>Screen On At Night</nme>
+		<State sr="con0" ve="2">
+			<code>165</code>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="2">
+					<lhs>%Display</lhs>
+					<op>0</op>
+					<rhs>on</rhs>
+				</Condition>
+				<Condition sr="c1" ve="2">
+					<lhs>%Nightmode</lhs>
+					<op>0</op>
+					<rhs>on</rhs>
+				</Condition>
+			</ConditionList>
+		</State>
+	</Profile>
 	<Profile sr="prof91" ve="2">
 		<cdate>1403949477744</cdate>
 		<clp>true</clp>
-		<edate>1403949531748</edate>
+		<edate>1404735799572</edate>
 		<id>91</id>
 		<mid0>92</mid0>
 		<nme>Autosync Manual</nme>
@@ -717,10 +735,10 @@
 	<Project sr="proj0">
 		<cdate>1403474057420</cdate>
 		<name>DataEcon</name>
-		<pids>52,64,58,12,8,85,7,10,95,40,32,50,82,49,79,74,14,60,68,17,55,15,63,78,66,69,65,34,38,30,61,2,71,91,37</pids>
+		<pids>49,37,85,8,61,50,68,71,65,58,74,32,69,91,82,17,15,79,90,63,55,78,10,101,34,12,52,30,7,66,95,60,40,64</pids>
 		<psort>Alpha</psort>
 		<scenes>Mobile Data Prompt,Location</scenes>
-		<tids>56,93,42,44,27,31,77,36,70,98,48,47,73,54,21,26,35,23,43,5,81,53,25,51,84,13,97,19,45,96,87,72,33,39,9,24,86,11,59,83,3,18,57,41,28,99,67,46,80,92,94,75,4,76,20,16,22,29,62</tids>
+		<tids>35,59,56,19,26,45,87,36,23,4,21,57,44,28,46,5,3,77,27,72,16,47,31,43,86,93,22,62,9,89,54,24,48,100,83,53,25,70,51,96,92,75,81,42,76,73,97,29,13,39,80,20,99,94,67</tids>
 		<tsort>Alpha</tsort>
 		<Kid sr="Kid">
 			<feat0>android.hardware.wifi:y</feat0>
@@ -820,66 +838,13 @@
 			<Str sr="arg7" ve="3"/>
 		</PropertiesElement>
 	</Scene>
-	<Task sr="task11">
-		<cdate>1403200216204</cdate>
-		<edate>1403907071384</edate>
-		<id>11</id>
-		<nme>Navigation</nme>
+	<Task sr="task100">
+		<cdate>1404281743980</cdate>
+		<edate>1404283424436</edate>
+		<id>100</id>
 		<Action sr="act0" ve="5">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="2">
-					<lhs>%GPS</lhs>
-					<op>0</op>
-					<rhs>off</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act1" ve="5">
-			<code>25</code>
-			<Int sr="arg0" val="0"/>
-		</Action>
-		<Action sr="act2" ve="5">
-			<code>11820</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<com.intangibleobject.securesettings.plugin.extra.BLURB>GPS Enabled</com.intangibleobject.securesettings.plugin.extra.BLURB>
-					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
-					<com.intangibleobject.securesettings.plugin.extra.ENABLED>true</com.intangibleobject.securesettings.plugin.extra.ENABLED>
-					<com.intangibleobject.securesettings.plugin.extra.ENABLED-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.ENABLED-type>
-					<com.intangibleobject.securesettings.plugin.extra.SETTING>gps</com.intangibleobject.securesettings.plugin.extra.SETTING>
-					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>GPS Enabled</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
-			<Str sr="arg2" ve="3">Secure Settings</Str>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act3" ve="5">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Data On For App</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="5"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-		</Action>
-		<Action sr="act4" ve="5">
-			<code>20</code>
-			<App sr="arg0">
-				<appClass>com.google.android.maps.MapsActivity</appClass>
-				<appPkg>com.google.android.apps.maps</appPkg>
-				<label>Maps</label>
-			</App>
-			<Str sr="arg1" ve="3"/>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act5" ve="5">
-			<code>38</code>
+			<code>425</code>
+			<Int sr="arg0" val="1"/>
 		</Action>
 	</Task>
 	<Task sr="task13">
@@ -908,21 +873,17 @@
 	</Task>
 	<Task sr="task16">
 		<cdate>1403721731420</cdate>
-		<edate>1404074377423</edate>
+		<edate>1404387661373</edate>
 		<id>16</id>
+		<pri>10</pri>
 		<Action sr="act0" ve="5">
 			<code>425</code>
 			<Int sr="arg0" val="1"/>
 		</Action>
-	</Task>
-	<Task sr="task18">
-		<cdate>1403480395047</cdate>
-		<edate>1403683924766</edate>
-		<id>18</id>
-		<Action sr="act0" ve="5">
+		<Action sr="act1" ve="5">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%Nightmode</Str>
-			<Str sr="arg1" ve="3">off</Str>
+			<Str sr="arg0" ve="3">%Athome</Str>
+			<Str sr="arg1" ve="3">on</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
@@ -949,19 +910,11 @@
 	</Task>
 	<Task sr="task20">
 		<cdate>1403098978369</cdate>
-		<edate>1403915063759</edate>
+		<edate>1404279597659</edate>
 		<id>20</id>
 		<nme>Night Mode Delay</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="5">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="2"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act1" ve="5">
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="2">
@@ -971,7 +924,7 @@
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act2" ve="5">
+		<Action sr="act1" ve="5">
 			<code>130</code>
 			<Str sr="arg0" ve="3">Night Mode</Str>
 			<Int sr="arg1" val="0"/>
@@ -980,7 +933,7 @@
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 		</Action>
-		<Action sr="act3" ve="5">
+		<Action sr="act2" ve="5">
 			<code>38</code>
 		</Action>
 	</Task>
@@ -1002,7 +955,7 @@
 		</Action>
 		<Action sr="act1" ve="5">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Night Mode Off Delay</Str>
+			<Str sr="arg0" ve="3">Night Mode Off</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="5"/>
 			<Str sr="arg3" ve="3"/>
@@ -1030,7 +983,7 @@
 	</Task>
 	<Task sr="task22">
 		<cdate>1403513800567</cdate>
-		<edate>1404060305437</edate>
+		<edate>1404734814159</edate>
 		<id>22</id>
 		<nme>Mobile Data Shutdown</nme>
 		<pri>10</pri>
@@ -1044,7 +997,7 @@
 	</Task>
 	<Task sr="task23">
 		<cdate>1403612981969</cdate>
-		<edate>1404084021494</edate>
+		<edate>1404738843298</edate>
 		<id>23</id>
 		<nme>Mobile Data Off</nme>
 		<pri>10</pri>
@@ -1073,6 +1026,15 @@
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
+		<Action sr="act4" ve="5">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Autosync Off</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="5"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
 	</Task>
 	<Task sr="task24">
 		<cdate>1404055008638</cdate>
@@ -1087,7 +1049,7 @@
 	</Task>
 	<Task sr="task25">
 		<cdate>1404055113793</cdate>
-		<edate>1404076924991</edate>
+		<edate>1404284883500</edate>
 		<id>25</id>
 		<nme>Mobile Data Prompt</nme>
 		<pri>10</pri>
@@ -1129,7 +1091,7 @@
 	</Task>
 	<Task sr="task26">
 		<cdate>1403443668050</cdate>
-		<edate>1404061588495</edate>
+		<edate>1404157981348</edate>
 		<id>26</id>
 		<nme>Mobile Data Delay Off</nme>
 		<pri>10</pri>
@@ -1147,8 +1109,8 @@
 		<Action sr="act1" ve="5">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="15"/>
-			<Int sr="arg2" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="2"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
@@ -1180,7 +1142,7 @@
 	</Task>
 	<Task sr="task27">
 		<cdate>1403221580781</cdate>
-		<edate>1404072053326</edate>
+		<edate>1404806328033</edate>
 		<id>27</id>
 		<nme>Lock Phone</nme>
 		<pri>10</pri>
@@ -1246,15 +1208,23 @@
 	</Task>
 	<Task sr="task3">
 		<cdate>1403098978369</cdate>
-		<edate>1403936367217</edate>
+		<edate>1404284972100</edate>
 		<id>3</id>
 		<nme>Night Mode</nme>
 		<pri>10</pri>
+		<rty>1</rty>
 		<Action sr="act0" ve="5">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Nightmode</Str>
+			<Str sr="arg1" ve="3">on</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="5">
 			<code>310</code>
 			<Int sr="arg0" val="2"/>
 		</Action>
-		<Action sr="act1" ve="5">
+		<Action sr="act2" ve="5">
 			<code>11820</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -1277,15 +1247,15 @@
 	</Task>
 	<Task sr="task31">
 		<cdate>1403516643575</cdate>
-		<edate>1403913415047</edate>
+		<edate>1404280237980</edate>
 		<id>31</id>
 		<nme>Night Mode Delay Lock</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="5">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="10"/>
-			<Int sr="arg2" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
@@ -1312,22 +1282,9 @@
 			<code>38</code>
 		</Action>
 	</Task>
-	<Task sr="task33">
-		<cdate>1403517116314</cdate>
-		<edate>1403734070202</edate>
-		<id>33</id>
-		<pri>10</pri>
-		<Action sr="act0" ve="5">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Nightmode</Str>
-			<Str sr="arg1" ve="3">on</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-		</Action>
-	</Task>
 	<Task sr="task35">
 		<cdate>1403612981969</cdate>
-		<edate>1404059637632</edate>
+		<edate>1404734840289</edate>
 		<id>35</id>
 		<nme>Mobile Data On</nme>
 		<pri>10</pri>
@@ -1353,12 +1310,13 @@
 	</Task>
 	<Task sr="task36">
 		<cdate>1403786250109</cdate>
-		<edate>1403950524146</edate>
+		<edate>1405003063210</edate>
 		<id>36</id>
 		<nme>Auto Sync Toggle</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="5">
 			<code>547</code>
+			<on>false</on>
 			<Str sr="arg0" ve="3">%Autosyncmanual</Str>
 			<Str sr="arg1" ve="3">on</Str>
 			<Int sr="arg2" val="0"/>
@@ -1417,40 +1375,15 @@
 	</Task>
 	<Task sr="task4">
 		<cdate>1403099163586</cdate>
-		<edate>1403913569364</edate>
+		<edate>1404283266942</edate>
 		<id>4</id>
-		<nme>Night Mode Off Delay</nme>
+		<nme>Night Mode Off</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="5">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Nightmode</Str>
-			<Str sr="arg1" ve="3">off</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-		</Action>
-		<Action sr="act1" ve="5">
-			<code>30</code>
-			<Int sr="arg0" val="0"/>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="1"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-		</Action>
-		<Action sr="act2" ve="5">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="2">
-					<lhs>%Nightmode</lhs>
-					<op>0</op>
-					<rhs>off</rhs>
-				</Condition>
-			</ConditionList>
-		</Action>
-		<Action sr="act3" ve="5">
 			<code>310</code>
 			<Int sr="arg0" val="0"/>
 		</Action>
-		<Action sr="act4" ve="5">
+		<Action sr="act1" ve="5">
 			<code>11820</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -1469,29 +1402,22 @@
 			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
 			<Str sr="arg2" ve="3">Secure Settings</Str>
 			<Int sr="arg3" val="0"/>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="2">
-					<lhs>%AIR</lhs>
-					<op>0</op>
-					<rhs>on</rhs>
-				</Condition>
-			</ConditionList>
 		</Action>
-		<Action sr="act5" ve="5">
-			<code>38</code>
-		</Action>
-	</Task>
-	<Task sr="task41">
-		<cdate>1403874943227</cdate>
-		<edate>1404048855674</edate>
-		<id>41</id>
-		<pri>10</pri>
-		<Action sr="act0" ve="5">
+		<Action sr="act2" ve="5">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%Athome</Str>
-			<Str sr="arg1" ve="3">on</Str>
+			<Str sr="arg0" ve="3">%Nightmode</Str>
+			<Str sr="arg1" ve="3">off</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="5">
+			<code>523</code>
+			<Str sr="arg0" ve="3">Night Mode Off</Str>
+			<Str sr="arg1" ve="3"/>
+			<Img sr="arg2" ve="2"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
 		</Action>
 	</Task>
 	<Task sr="task42">
@@ -1521,7 +1447,7 @@
 	</Task>
 	<Task sr="task44">
 		<cdate>1403629796413</cdate>
-		<edate>1404084221748</edate>
+		<edate>1404735894732</edate>
 		<id>44</id>
 		<nme>Autosync On</nme>
 		<pri>10</pri>
@@ -1534,8 +1460,14 @@
 			<Str sr="arg4" ve="3"/>
 			<Str sr="arg5" ve="3"/>
 			<ConditionList sr="if">
+				<bool0>And</bool0>
 				<Condition sr="c0" ve="2">
 					<lhs>%Wificonn</lhs>
+					<op>0</op>
+					<rhs>off</rhs>
+				</Condition>
+				<Condition sr="c1" ve="2">
+					<lhs>%Mobdata</lhs>
 					<op>0</op>
 					<rhs>off</rhs>
 				</Condition>
@@ -1579,13 +1511,20 @@
 				</Img>
 			</ListElementItem>
 		</Action>
+		<Action sr="act4" ve="5">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Autosyncmanual</Str>
+			<Str sr="arg1" ve="3">on</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
 		<Img sr="icn" ve="2">
 			<nme>hd_navigation_refresh</nme>
 		</Img>
 	</Task>
 	<Task sr="task45">
 		<cdate>1403629814375</cdate>
-		<edate>1404080735770</edate>
+		<edate>1405003252734</edate>
 		<id>45</id>
 		<nme>Autosync Off</nme>
 		<pri>10</pri>
@@ -1659,12 +1598,13 @@
 	</Task>
 	<Task sr="task47">
 		<cdate>1403283253659</cdate>
-		<edate>1404056133018</edate>
+		<edate>1404680190146</edate>
 		<id>47</id>
 		<nme>At Home</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="5">
 			<code>130</code>
+			<on>false</on>
 			<Str sr="arg0" ve="3">Low Volume Ring</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="5"/>
@@ -1718,7 +1658,7 @@
 	</Task>
 	<Task sr="task5">
 		<cdate>1403100188018</cdate>
-		<edate>1404079919720</edate>
+		<edate>1404462696522</edate>
 		<id>5</id>
 		<nme>Wifi Connected</nme>
 		<pri>10</pri>
@@ -1913,14 +1853,14 @@
 	</Task>
 	<Task sr="task59">
 		<cdate>1403680074009</cdate>
-		<edate>1404081803591</edate>
+		<edate>1405412509006</edate>
 		<id>59</id>
 		<nme>Auto Sync Delayed Off</nme>
 		<Action sr="act0" ve="5">
 			<code>30</code>
 			<Int sr="arg0" val="0"/>
 			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="1"/>
+			<Int sr="arg2" val="2"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 		</Action>
@@ -1971,7 +1911,7 @@
 	</Task>
 	<Task sr="task70">
 		<cdate>1403899753389</cdate>
-		<edate>1403899780912</edate>
+		<edate>1404256547065</edate>
 		<id>70</id>
 		<Action sr="act0" ve="5">
 			<code>547</code>
@@ -2028,7 +1968,7 @@
 	</Task>
 	<Task sr="task75">
 		<cdate>1403903578684</cdate>
-		<edate>1404048782875</edate>
+		<edate>1404307306679</edate>
 		<id>75</id>
 		<pri>10</pri>
 		<Action sr="act0" ve="5">
@@ -2062,7 +2002,7 @@
 	</Task>
 	<Task sr="task77">
 		<cdate>1403903940341</cdate>
-		<edate>1403907585875</edate>
+		<edate>1404392355370</edate>
 		<id>77</id>
 		<nme>Data On For App</nme>
 		<pri>10</pri>
@@ -2091,8 +2031,9 @@
 	</Task>
 	<Task sr="task80">
 		<cdate>1403912176983</cdate>
-		<edate>1403912201391</edate>
+		<edate>1404256416574</edate>
 		<id>80</id>
+		<pri>10</pri>
 		<Action sr="act0" ve="5">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%Nighttime</Str>
@@ -2103,7 +2044,7 @@
 	</Task>
 	<Task sr="task81">
 		<cdate>1403912210573</cdate>
-		<edate>1403912237663</edate>
+		<edate>1404282640889</edate>
 		<id>81</id>
 		<Action sr="act0" ve="5">
 			<code>547</code>
@@ -2120,32 +2061,6 @@
 		<Action sr="act0" ve="5">
 			<code>425</code>
 			<Int sr="arg0" val="1"/>
-		</Action>
-	</Task>
-	<Task sr="task84">
-		<cdate>1403913869182</cdate>
-		<edate>1403913898533</edate>
-		<id>84</id>
-		<nme>Navigation Exit</nme>
-		<Action sr="act0" ve="5">
-			<code>11820</code>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<com.intangibleobject.securesettings.plugin.extra.BLURB>GPS Disabled</com.intangibleobject.securesettings.plugin.extra.BLURB>
-					<com.intangibleobject.securesettings.plugin.extra.BLURB-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.BLURB-type>
-					<com.intangibleobject.securesettings.plugin.extra.ENABLED>false</com.intangibleobject.securesettings.plugin.extra.ENABLED>
-					<com.intangibleobject.securesettings.plugin.extra.ENABLED-type>java.lang.Boolean</com.intangibleobject.securesettings.plugin.extra.ENABLED-type>
-					<com.intangibleobject.securesettings.plugin.extra.SETTING>gps</com.intangibleobject.securesettings.plugin.extra.SETTING>
-					<com.intangibleobject.securesettings.plugin.extra.SETTING-type>java.lang.String</com.intangibleobject.securesettings.plugin.extra.SETTING-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>GPS Disabled</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.intangibleobject.securesettings.plugin</Str>
-			<Str sr="arg2" ve="3">Secure Settings</Str>
-			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task86">
@@ -2175,9 +2090,23 @@
 			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
+	<Task sr="task89">
+		<cdate>1404279611138</cdate>
+		<edate>1404279626288</edate>
+		<id>89</id>
+		<Action sr="act0" ve="5">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Night Mode</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="5"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+	</Task>
 	<Task sr="task9">
 		<cdate>1403367646862</cdate>
-		<edate>1403876152028</edate>
+		<edate>1404306105594</edate>
 		<id>9</id>
 		<nme>Wifi Disconnected</nme>
 		<Action sr="act0" ve="5">
@@ -2187,10 +2116,19 @@
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
+		<Action sr="act1" ve="5">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Autosync Off</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="5"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
 	</Task>
 	<Task sr="task92">
 		<cdate>1403949484287</cdate>
-		<edate>1403949518642</edate>
+		<edate>1404735799572</edate>
 		<id>92</id>
 		<pri>10</pri>
 		<Action sr="act0" ve="5">
@@ -2203,7 +2141,7 @@
 	</Task>
 	<Task sr="task93">
 		<cdate>1403949625838</cdate>
-		<edate>1404081743051</edate>
+		<edate>1404238301068</edate>
 		<id>93</id>
 		<nme>Autosync Scheduled Run</nme>
 		<pri>10</pri>
@@ -2263,23 +2201,6 @@
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
-		</Action>
-	</Task>
-	<Task sr="task98">
-		<cdate>1404071022871</cdate>
-		<edate>1404071911845</edate>
-		<id>98</id>
-		<nme>Map Show</nme>
-		<pri>10</pri>
-		<Action sr="act0" ve="5">
-			<code>47</code>
-			<Str sr="arg0" ve="3">Location</Str>
-			<Int sr="arg1" val="4"/>
-			<Int sr="arg2" val="100"/>
-			<Int sr="arg3" val="100"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="1"/>
-			<Int sr="arg6" val="1"/>
 		</Action>
 	</Task>
 	<Task sr="task99">
